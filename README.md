@@ -1,20 +1,15 @@
-# 📊 Data evaluation template
+Theme Park Information 
 
-A simple Streamlit app showing how to evaluate and annotate data, using dataframes
-and charts. 
+Theme Park Wait Times is a data feed containing the wait times of rides in different theme parks around the world. Queue Times offers an interface providing access to live waiting time data for over 80 amusement parks. 
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://data-evaluation-template.streamlit.app/)
+This project aims to create an automated system to dynamically fetch the waiting time as they update to create a database of the waiting time. This data will then be visualised to show the different theme parks or different rides and enable users to see the waiting time for that specific ride.
 
-### How to run it on your own machine
+Part One
 
-1. Install the requirements
+theme_park1.py requests the current wait times of differnt rides in differnt theme parks around the world, from the Theme Park Wait Times API. It then stores information (such as the theme park, ride name, wait time and status) in the student.park_db table.
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+theme_park1.py sits on the job server, running on a CRON schedule that executes it every hour.
 
-2. Run the app
+Part Two
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+The Streamlit application reads from the database and displays the latest wait time of each rides in the selected theme park.
