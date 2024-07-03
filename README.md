@@ -1,8 +1,8 @@
 Theme Park Information 
 
-Theme Park Wait Times is a data feed containing the wait times of rides in different theme parks around the world. Queue Times offers an interface providing access to live waiting time data for over 80 amusement parks. 
+Theme Park Wait Times is a data feed containing the wait time of rides in different theme parks around the world. Queue Times offers an interface providing access to live waiting time data for over 80 amusement parks. 
 
-This project aims to create an automated system to dynamically fetch the waiting time as they update to create a database of the waiting time. This data will then be visualised to show the different theme parks or different rides and enable users to see the waiting time for that specific ride.
+This project aims to create an automated system to dynamically fetch the waiting time as they update to create a database of the waiting time. This data will then be visualised to show the different theme parks and different rides, and enable users to see the waiting time for that specific ride.
 
 Part One
 
